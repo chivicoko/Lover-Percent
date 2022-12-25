@@ -1,0 +1,26 @@
+body {
+    font-family: cursive;
+}
+
+section {
+    padding: 20px 0;
+    text-align: center;
+    /* border: 1px solid red; */
+    margin: 0 310px;
+    /* height: 100vh; */
+}
+
+section h3 {
+    margin: 30px 0;
+}
+
+#strong {
+    text-align: center;
+}
+
+#formContainer {
+    text-align: center;
+    border: 1px solid black;
+    width: 500px;
+    padding: 80px 100px;
+}
