@@ -1,14 +1,10 @@
-var firstInput = document.getElementById("firstLover").val();
-var secondInput = document.getElementById("secondLover").val();
-alert(firstInput);
+document.getElementById('btn').onclick = () => {
+    var firstInput = document.getElementById('firstLover').value;
+    var secondInput = document.getElementById('secondLover').value;
 
-var percent = Math.random() * 100;
+    var percent = Math.random() * 100;
+    var finalLovePercent = Math.floor(percent) + 1
 
-function calculateLovePercentage() {
-    var finalLovePercent = Math.floor(percent) + 1;
-    var loverPercent = document.getElementById("lovePercentOutput").innerHTML
-    loverPercent = "The love between " + firstInput + " and " + secondInput + " is: " + finalLovePercent + "%";
-    return loverPercent;
+    document.getElementById('lovePercentOutput').innerHTML =
+    "The love between " + firstInput + " and " + secondInput + " is: " + finalLovePercent + "%";
 }
-
-calculateLovePercentage();
