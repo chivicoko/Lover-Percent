@@ -5,6 +5,12 @@ document.getElementById('btn').onclick = () => {
     var percent = Math.random() * 100;
     var finalLovePercent = Math.floor(percent) + 1
 
-    document.getElementById('lovePercentOutput').innerHTML =
-    "The love between " + firstInput + " and " + secondInput + " is: " + finalLovePercent + "%";
+    if (finalLovePercent >= 70) {
+        document.getElementById('lovePercentOutput').innerHTML =
+        "The love between you and " + secondInput + " is: " + finalLovePercent + "%. Your love for each other is deeper than the oceans! 💓";
+    } else{
+        document.getElementById('lovePercentOutput').innerHTML =
+        "The love between you and " + secondInput + " is: " + finalLovePercent + "%";
+    }
+
 }
